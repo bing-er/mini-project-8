@@ -13,12 +13,13 @@
 
 ```
 mini-project-5/
-├── README.md                    # This file
-├── requirements.txt             # Python dependencies
-├── data/                        # Dataset (not included in repo)
-├── notebooks/                          # Jupyter notebooks (primary work)
+├── data/                          # Dataset (not included in repo)
+├── notebooks/                     # Jupyter notebooks (primary work)
 ├── src/                           # Modular Python code (optional)
 ├── models/                        # Final models only
-└── results/                       # Outputs (figures, metrics, reports)
+├── results/                       # Outputs (figures, metrics, reports)
+├── .gitignore                     # Specifies intentionally untracked files to ignore.
+├── README.md                      # This file (project overview, setup, and usage).
+└── requirements.txt               # Python dependencies for reproducibility.
 
 ```
