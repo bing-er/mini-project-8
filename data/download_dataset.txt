@@ -1,0 +1,84 @@
+Mini Project 8 – Dataset Download Instructions
+Dataset: Flood Area Segmentation (Option A)
+
+This project uses the **Flood Area Segmentation dataset** from Kaggle.
+
+Dataset Source
+https://www.kaggle.com/datasets/faizalkarim/flood-area-segmentation
+
+The dataset contains approximately 290 aerial/UAV images with corresponding binary segmentation masks indicating flooded areas.
+
+Important Note
+The dataset files are not included in this repository because of their size and Kaggle licensing restrictions. Please download them manually using the instructions below.
+
+---
+
+## Step 1 — Download from Kaggle
+
+1. Create or log in to your Kaggle account:
+   https://www.kaggle.com/
+
+2. Visit the dataset page:
+   https://www.kaggle.com/datasets/faizalkarim/flood-area-segmentation
+
+3. Click **Download** to download the dataset as a ZIP file.
+
+---
+
+## Step 2 — Extract the Dataset
+
+Unzip the downloaded file.
+
+Example:
+
+unzip flood-area-segmentation.zip
+
+---
+
+## Step 3 — Place Dataset in the Repository
+
+Move the dataset contents into the `data/` folder of this project.
+
+Example structure:
+
+project-root/
+│
+├── data/
+│   ├── images/
+│   ├── masks/
+│   └── download_dataset.txt
+│
+├── notebooks/
+├── src/
+└── README.md
+
+Ensure that the image files and their corresponding masks are correctly placed so the training pipeline can locate them.
+
+---
+
+## Optional: Kaggle API Download
+
+If you have the Kaggle API configured, you can download the dataset using:
+
+kaggle datasets download -d faizalkarim/flood-area-segmentation
+
+Then extract it:
+
+unzip flood-area-segmentation.zip -d data/
+
+---
+
+## Dataset Description
+
+• Images: Aerial/UAV imagery of flood events
+• Masks: Binary segmentation masks (1 = flood, 0 = background)
+• Total samples: ~290 image–mask pairs
+
+The task is to train a **U-Net segmentation model** to detect flooded regions at the pixel level.
+
+---
+
+## Notes
+
+Do NOT commit the raw dataset files to GitHub.
+Ensure the `data/` folder is listed in `.gitignore` if large files are present.
