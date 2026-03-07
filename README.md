@@ -75,7 +75,8 @@ flood-area-segmentation/
 │   ├── predictions.png     # Sample validation predictions
 │   └── sample.png          # Sample image–mask pair from dataset
 ├── notebooks/              # Jupyter notebooks (primary work)
-│   └── MP_YU_Persson.ipynb # Main notebook: data loading 
+│   └── MP_YU_Persson.ipynb # Main notebook
+├── src/                    # Python source code
 ├── requirements.txt        # Python dependencies
 ├── README.md
 └── .gitignore
